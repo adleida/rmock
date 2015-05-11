@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+rmock/__init__.py
+rmock/mock.py
+rmock.egg-info/PKG-INFO
+rmock.egg-info/SOURCES.txt
+rmock.egg-info/dependency_links.txt
+rmock.egg-info/entry_points.txt
+rmock.egg-info/not-zip-safe
+rmock.egg-info/requires.txt
+rmock.egg-info/top_level.txt
+rmock/ext/__init__.py

@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: rmock
+Version: 0.0.1
+Summary: rmock is an test tool for adexchange.
+Home-page: http://git.adleida.com/paxp/
+Author: adleida
+Author-email: noreply@adleida.com
+License: UNKNOWN
+Description: 
+        rmock
+        -----
+        
+        rmock is an test tool for adexchange.
+        
+        
+Platform: any
