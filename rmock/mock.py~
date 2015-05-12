@@ -14,7 +14,7 @@ def main():
     host, port = cfg.get('rmock', '0.0.0.0:6001').split(':')
     debug = cfg.get('debug',  True)
     rmock = Rmock()
-    rmock.run(host=host, port=int(port), debug=debug)
+    rmock.run(host=host, port=port, debug=debug)
 
 
 if __name__ == '__main__':

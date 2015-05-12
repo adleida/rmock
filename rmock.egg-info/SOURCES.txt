@@ -1,7 +1,10 @@
 MANIFEST.in
 setup.py
 rmock/__init__.py
+rmock/endpoints.py
+rmock/flaskapp.py
 rmock/mock.py
+rmock/utils.py
 rmock.egg-info/PKG-INFO
 rmock.egg-info/SOURCES.txt
 rmock.egg-info/dependency_links.txt
@@ -10,3 +13,4 @@ rmock.egg-info/not-zip-safe
 rmock.egg-info/requires.txt
 rmock.egg-info/top_level.txt
 rmock/ext/__init__.py
+rmock/res/rmock.yaml

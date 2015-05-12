@@ -44,6 +44,6 @@ with open('rmock/__init__.py', 'rb') as f:
                 'pytest==2.7.0',
                 'PyYAML==3.11',
                 'tox==1.9.2',
-                'termcolor==1.1.0'
+                'termcolor==1.1.0',
             ],
         )
