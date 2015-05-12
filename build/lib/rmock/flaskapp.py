@@ -10,7 +10,7 @@ import logging
 import uuid
 import time
 import json
-from . endpoints import index, cfg, chk, dsp, res, notice, adm
+from . endpoints import index, cfg, chk, dsp, res, notice
 from flask import Flask, request, make_response, jsonify
 
 
@@ -37,7 +37,6 @@ class Rmock(Flask):
         self.add_url_rule('/dsp/v2', view_func=dsp, methods=["GET"])
         self.add_url_rule('/res/v2/<string:did>', view_func=res, methods=["POST"])
         self.add_url_rule('/notice/v2/<string:did>', view_func=notice, methods=["POST"])
-        self.add_url_rule('/adm/<string:mid>', view_func=adm, methods=["GET"])
         self.add_url_rule('/log/<string:uuid>', view_func=self.view_log, methods=["GET"])
 
 

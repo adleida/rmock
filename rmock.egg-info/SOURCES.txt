@@ -13,4 +13,5 @@ rmock.egg-info/not-zip-safe
 rmock.egg-info/requires.txt
 rmock.egg-info/top_level.txt
 rmock/ext/__init__.py
+rmock/res/creative.yaml
 rmock/res/rmock.yaml

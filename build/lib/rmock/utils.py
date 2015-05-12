@@ -8,7 +8,6 @@ import io
 import pkgutil
 import functools
 import logging
-import rmock
 
 
 class MyError(Exception):
@@ -42,9 +41,9 @@ def color(msg, clr):
 def set_log(logger, fname):
     fm = logging.Formatter("""%(asctime)s:[%(filename)s:%(lineno)d]:%(message)s""")
     fn = logging.FileHandler('./log/' + str(fname), mode='w')
-    fn.setLevel(logging.DEBUG)
+    logger.handler = []
+    fn.setLevel(logging.ERROR)
     fn.setFormatter(fm)
-    logger.handlers = []
     logger.addHandler(fn)
 
 
@@ -69,3 +68,4 @@ def load_resource(name, as_object=True):
         else:
             raise Exception('cannot detect resource type')
     return data
+

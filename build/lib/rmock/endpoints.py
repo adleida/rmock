@@ -2,9 +2,8 @@
 # -*- coding:utf-8 -*-
 import time
 import uuid
-import os
-from . utils import set_log, compare_dictionaries, load_resource
-from flask import Flask, request, jsonify, abort, current_app as app
+from . utils import set_log, compare_dictionaries
+from flask import Flask, request, jsonify, current_app as app
 
 
 def index():
@@ -18,7 +17,6 @@ def index():
 
 
 def cfg():
-    log_path = os.path.join(app.root_path, 'log') 
     if request.json and request.json.get('dsp', {}):
         app.conf = request.json.get('dsp')
         uid = uuid.uuid4()
@@ -101,11 +99,3 @@ def notice(did):
     app.logger.info('response_notice >>> %s' % app.json_dump(res_notice))
     app.logger.info('Response bid notice end \n\n\n')
     return jsonify(res_notice)
-
-
-def adm(mid):
-    adm = load_resource('creative.yaml')
-    for item in adm:
-        if mid == item['id']:
-            return jsonify(item)
-    abort(404)

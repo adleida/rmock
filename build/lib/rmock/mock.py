@@ -8,19 +8,9 @@
 from .flaskapp import Rmock
 from .utils import load_resource
 from .endpoints import index
-import argparse
 
 def main():
-
-
-    import rmock
-    parse = argparse.ArgumentParser(description='rmock')
-    parse.add_argument('-v', '--version', action='version', version=rmock.__version__)
-    ps = parse.parse_args()
-
-
     cfg = load_resource('rmock.yaml') 
-    print(cfg)
     host, port = cfg.get('rmock', '0.0.0.0:6001').split(':')
     debug = cfg.get('debug',  True)
     rmock = Rmock()

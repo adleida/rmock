@@ -1,3 +1,4 @@
 .tox/
 mock/*.pyc
 mock/__pycache__/
+log/
