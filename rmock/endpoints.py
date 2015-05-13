@@ -4,9 +4,8 @@ import time
 import uuid
 import os
 import rmock
-import random
-from . utils import set_log, compare_dictionaries, load_resource
-from flask import Flask, request, jsonify, abort, current_app as app
+from . utils import compare_dictionaries, load_resource, set_log
+from flask import request, jsonify, abort, current_app as app
 
 
 def index():
@@ -18,13 +17,12 @@ def index():
     })
 
 
-
 def post_conf():
     log_path = os.path.join(app.root_path, 'log') 
     if request.json and request.json.get('dsp', {}):
         app.conf = request.json.get('dsp')
         uid = uuid.uuid4()
-        # set_log(app.logger, uid)
+        set_log(app.logger, uid)
         app.logger.info('uuid = %s ' % uid)
         app.logger.info('conf = %s ' % app.conf)
         return jsonify({"conf": True, "uuid": uid})
