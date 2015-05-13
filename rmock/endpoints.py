@@ -53,9 +53,7 @@ def return_res(did):
         if l[0] == did:
             if l[2]:
                 res_data = l[1]
-                rid = res_data.get('id', '')
-                if not rid:
-                    res_data['id'] = request.json['id']
+                res_data['id'] = request.json['id']
                 app.logger.info('bid_response >>> %s' % app.json_dump(res_data))
                 return jsonify(res_data)
             else:
