@@ -20,7 +20,6 @@ def main():
 
 
     cfg = load_resource('rmock.yaml') 
-    print(cfg)
     host, port = cfg.get('rmock', '0.0.0.0:6001').split(':')
     debug = cfg.get('debug',  True)
     rmock = Rmock()

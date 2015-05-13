@@ -39,11 +39,7 @@ with open('rmock/__init__.py', 'rb') as f:
             ''',
             install_requires=[
                 'Flask==0.10.1',
-                'Flask-RESTful==0.3.2',
-                'jsonschema==2.4.0',
-                'pytest==2.7.0',
                 'PyYAML==3.11',
-                'tox==1.9.2',
-                'termcolor==1.1.0',
+                'termcolor==1.1.0'
             ],
         )
