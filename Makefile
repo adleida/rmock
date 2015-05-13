@@ -10,7 +10,7 @@ test:
 build:
 	python setup.py sdist
 
-upload:
+upload: build
 	scp ./dist/rmock-0.0.3.tar.gz python@192.168.1.114:/tmp
 
 up_paxp:

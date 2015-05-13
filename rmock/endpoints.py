@@ -4,6 +4,7 @@ import time
 import uuid
 import os
 import rmock
+import random
 from . utils import set_log, compare_dictionaries, load_resource
 from flask import Flask, request, jsonify, abort, current_app as app
 
@@ -23,7 +24,7 @@ def post_conf():
     if request.json and request.json.get('dsp', {}):
         app.conf = request.json.get('dsp')
         uid = uuid.uuid4()
-        set_log(app.logger, uid)
+        # set_log(app.logger, uid)
         app.logger.info('uuid = %s ' % uid)
         app.logger.info('conf = %s ' % app.conf)
         return jsonify({"conf": True, "uuid": uid})
@@ -92,3 +93,7 @@ def return_adm(mid):
         if mid == item['id']:
             return jsonify(item)
     abort(404)
+
+
+def random_dsp():
+    pass
