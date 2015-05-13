@@ -1,2 +1,28 @@
-rmock: 0.0.0.0:6001
+rmock: 0.0.0.0
+
 debug: False
+
+
+logging:
+  formatters:
+    default:
+      format: '%(asctime)s [%(levelname)s] %(name)s: %(message)s'
+      datefmt: '%FT%T'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: default
+      level: DEBUG
+    file:
+      class: logging.handlers.RotatingFileHandler
+      formatter: default
+      level: DEBUG
+      filename: rmock.log 
+      maxBytes: 100000000
+      backupCount: 5
+  loggers:
+    werkzeug:
+      level: DEBUG
+  root:
+      handlers: [console, file]
+      level: DEBUG
