@@ -54,10 +54,14 @@ def return_res(did):
         if l[0] == did:
             if l[2]:
                 res_data = l[1]
-                res_data['id'] = request.json['id']
-                logging.info('bid_request_id >>> %s' % res_data['id'])
-                logging.info('bid_response >>> %s' % app.json_dump(res_data))
-                return jsonify(res_data)
+                try:
+                    res_data['id'] = request.json['id']
+                    logging.info('bid_request_id >>> %s' % res_data['id'])
+                    logging.info('bid_response >>> %s' % app.json_dump(res_data))
+                    return jsonify(res_data)
+                except Exception as ex:
+                    logging.error('Error %s ' % ex)
+                    return res_data
             else:
                 time.sleep(2)
     abort(404)
