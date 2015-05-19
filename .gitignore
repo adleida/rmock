@@ -1,5 +1,5 @@
 .tox/
-mock/*.pyc
+rmock/*.pyc
 *.log
-mock/__pycache__/
+rmock/__pycache__/
 log/

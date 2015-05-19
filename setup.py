@@ -40,7 +40,6 @@ with open('rmock/__init__.py', 'rb') as f:
             install_requires=[
                 'Flask==0.10.1',
                 'PyYAML==3.11',
-                'fake-factory==0.5.0',
                 'termcolor==1.1.0'
             ],
         )
