@@ -1,64 +1,54 @@
---- 
-- 
-  data: 
+- data:
     img: "http://exchange/11002"
-    text: "品友app2 is very good"
-  did: "110"
-  id: "11010011"
+    text: 品友app2 is very good
+  did: '110'
+  id: 55541a20ecca2241673041c6
   type: 1
-- 
-  data: 
+- data:
     img: "http://ad-exchange-server/image20101"
     text: 下载聚美优品App立马送代金券by品友
-  did: "110"
-  id: "11010010"
+  did: '110'
+  id: 55541a20ecca2241673041c9
   type: 1
-- 
-  data: 
+- data:
     img: "http://ad-exchange-server/image20121"
-    text: "国美-天天特价,快速送达,优惠GO到家 by 品友"
-  did: "110"
-  id: "11010012"
+    text: 国美-天天特价,快速送达,优惠GO到家 by 品友
+  did: '110'
+  id: 55541a20ecca2241673041cc
   type: 1
-- 
-  data: 
+- data:
     img: "http://ad-exchange-server/image21101"
     text: 分众传媒下载聚美优品App立马送代金券
-  did: "111"
-  id: "11110010"
+  did: '111'
+  id: 55541a20ecca2241673041cf
   type: 1
-- 
-  data: 
+- data:
     img: "http://exchange/11102"
-    text: "分众传媒app2 is very good"
-  did: "111"
-  id: "11110011"
+    text: 分众传媒app2 is very good
+  did: '111'
+  id: 55541a20ecca2241673041d2
   type: 1
-- 
-  data: 
+- data:
     img: "http://ad-exchange-server/image21121"
-    text: "分众传媒 3C数码哪家强？易迅让你Duang Duang Duang"
-  did: "111"
-  id: "11110012"
+    text: 分众传媒 3C数码哪家强？易迅让你Duang Duang Duang
+  did: '111'
+  id: 55541a20ecca2241673041d5
   type: 1
-- 
-  data: 
+- data:
     img: "http://ad-exchange-server/image22101"
-    text: "亿玛 下载聚美优品App立马送代金券"
-  did: "112"
-  id: "11210011"
+    text: 亿玛 下载聚美优品App立马送代金券
+  did: '112'
+  id: 55541a20ecca2241673041d8
   type: 1
-- 
-  data: 
+- data:
     img: "http://exchange/image22102"
-    text: " 亿玛 花猫美食,最好的选择"
-  did: "112"
-  id: "11210011"
+    text: ' 亿玛 花猫美食,最好的选择'
+  did: '112'
+  id: 55541a20ecca2241673041db
   type: 1
-- 
-  data: 
+- data:
     img: "http://ad-exchange-server/image22121"
-    text: "亿玛 下载聚美优品App立马送代金券"
-  did: "112"
-  id: "11210012"
+    text: 亿玛 下载聚美优品App立马送代金券
+  did: '112'
+  id: 55541a20ecca2241673041de
   type: 1

@@ -5,10 +5,11 @@ import uuid
 import os
 import rmock
 import logging
-from . utils import compare_dictionaries, load_resource, set_log
+from . utils import compare_dictionaries, load_resource
 from flask import request, jsonify, abort, current_app as app
 
 logger = logging.getLogger(__name__)
+adm = load_resource('creative.yaml')
 
 
 def index():
@@ -91,8 +92,6 @@ def get_notice(did):
 
 
 def return_adm(mid):
-
-    adm = load_resource('creative.yaml')
     for item in adm:
         if mid == item['id']:
             logging.info('mid: %s' % mid)
