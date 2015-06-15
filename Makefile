@@ -11,5 +11,4 @@ build:
 	python setup.py sdist
 
 upload: build
-	scp ./dist/rmock-0.0.6.tar.gz 114:
-	scp ./dist/rmock-0.0.6.tar.gz ali:
+	scp ./dist/rmock-0.0.7.tar.gz 114:
